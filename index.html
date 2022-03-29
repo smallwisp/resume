@@ -10,78 +10,97 @@
   <title>Сайт резюме</title>
 </head>
 <body>
-  <div class="info">
-    <img src="img/main-photo.jpg" alt="avatar" width="300">
 
-    <div class="info-text">
-      <h1>Вадим Чубаров</h1>
-
-      <p>Я начинающий frontend разработчик. В данный момент активно изучаю <strong>HTML</strong>, <strong> CSS</strong>, <strong>JavaScript</strong>. Имею несколько проектов на <strong>Github</strong> и планирую устроиться на позицию <em>Junior Frontend Developer</em></p>
-
-      <p>В свободное время также люблю заниматься <em>активным отдыхом</em>, <em>спортом</em>, однако уже не мыслю свою жизнь без <strong><em>программирования</em></strong>!</p>
-
-      <p><strong>Список социальных сетей:</strong></p>
-      <a href="https://vk.com/chubarov96" target="_blank">Вконтакте</a>
-      |
-      <a href="https://t.me/Son_of_Aiur" target="_blank">Telegram</a>
+  <div class="container">
+    <div class="info">
+      <img src="img/main-photo.jpg" alt="avatar" class="avatar">
+  
+      <div class="info-text">
+        <h1>Вадим Чубаров</h1>
+  
+        <p>Я начинающий frontend разработчик. В данный момент активно изучаю <strong>HTML</strong>, <strong> CSS</strong>, <strong>JavaScript</strong>. Имею несколько проектов на <strong>Github</strong> и планирую устроиться на позицию <em>Junior Frontend Developer</em></p>
+  
+        <p>В свободное время также люблю заниматься <em>активным отдыхом</em>, <em>спортом</em>, однако уже не мыслю свою жизнь без <strong><em>программирования</em></strong>!</p>
+  
+        <p><strong>Список социальных сетей:</strong></p>
+        <a href="https://vk.com/chubarov96" target="_blank">Вконтакте</a>
+        |
+        <a href="https://t.me/Son_of_Aiur" target="_blank">Telegram</a>
+      </div>
+      
     </div>
     
-  </div>
+    <div class="card bg-blue">
+      <h2>Мои хобби</h2>
+      <ol class="list">
+        <li class="hobbies">Спорт</li>
+        <li class="hobbies">Книги</li>
+        <li class="hobbies">Шахматы</li>
+        <li class="hobbies">Путешествия</li>
+      </ol>
+    </div>
   
-
-  <h2>Мои хобби</h2>
-
-  <ol>
-    <li class="hobbies">Спорт</li>
-    <li class="hobbies">Книги</li>
-    <li class="hobbies">Шахматы</li>
-    <li class="hobbies">Путешествия</li>
-  </ol>
-
-  <h2>Опыт работы</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ЗНТЦ</td>
-        <td>Инженер-проектировщик</td>
-        <td>2018-2021</td>
-      </tr>
-      <tr>
-        <td>Колорит</td>
-        <td>Сервис-инженер</td>
-        <td>2022</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Связаться со мной</h2>
-  <form>
-    <div>
-      <label for="name">Ваше имя:</label>
-      <input type="text" placeholder="Введите имя" id="name">
+    <div class="card bg-red">
+      <h2>Опыт работы</h2>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>ЗНТЦ</td>
+            <td>Инженер-проектировщик</td>
+            <td>2018-2021</td>
+          </tr>
+          <tr>
+            <td>Колорит</td>
+            <td>Сервис-инженер</td>
+            <td>2022</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <div>
-      <label for="mail">Ваш email:</label>
-      <input type="email" placeholder="Введите email" id="mail">
-    </div>
+    <div class="card bg-green">
+      <h2>Мои работы</h2>
 
-    <div>
-      <label for="message">Ваше сообщение:</label>
-      <br>
-      <textarea id="message" cols="30" rows="10"></textarea>
+      <ul class="link-list">
+        <li><a href="https://smallwisp.github.io/timer/">Сайт строительной компании</a></li>
+        <li><a href="https://smallwisp.github.io/diplom_prj/">Сайт электрика</a></li>
+        <li><a href="https://smallwisp.github.io/calc/">Калькулятор бюджета</a></li>
+      </ul>
     </div>
+  
+    <div class="">
+      <form class="form">
+        <h2>Связаться со мной</h2>
 
-    <button type="submit">Отправить!</button>
-  </form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" placeholder="Введите имя" id="name">
+          </div>
+      
+          <div class="form-group">
+            <label for="mail">Ваш email:</label>
+            <input type="email" placeholder="Введите email" id="mail">
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+        </div>
+    
+        <button type="submit" class="btn">Отправить!</button>
+      </form>
+    </div>
+  </div>
+ 
   
 </body>
 </html>
